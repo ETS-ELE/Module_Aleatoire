@@ -46,11 +46,7 @@ static int obtenir_prochaine_position(int chemin[],int longueur_chemin,int nb_li
 
 	}
 
-	printf("position x = %d\n", position_x);
-	printf("position y = %d\n", position_y);
-
 	nombre_a_renvoyer = ((nb_lignes_grille*position_x) + position_y);
-	printf("return %d\n", nombre_a_renvoyer);
 	return nombre_a_renvoyer;
 	
 }
