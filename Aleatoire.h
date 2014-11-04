@@ -33,15 +33,32 @@
 void chemin_aleatoire_ajouter_un_pas(int* chemin[], int* longueur_chemin, int nb_lignes_grille, int nb_colonnes_grille);
 /*
 CHEMIN_ALEATOIRE_AJOUTER_UN_PAS
-        Cette fonction retourne la prochaine position à visiter à partir de la dernière position du chemin courant. 
-        La position est choisie au hasard et doit être valide. La nouvelle position ne doit donc pas sortir du tableau. 
-        Par exemple, pour le chemin présenté plus haut, la prochaine position est 16, 22 ou 20.
+        Cette procédure ajoute un pas à un chemin et ajuste sa longueur. La position du prochain pas est choisie au hasard, 
+        mais doit être valide. Si la nouvelle position coupe le chemin existant, la boucle est tronquée. 
+        Observez le chemin présenté ici-bas.
 
-	Parametre : 	int* chemin[]	--> Tableau contenant le labyrinthe à afficher.
-	                int* longueur_chemin
+	Parametre : 	int* chemin[]		--> Pile contenant le chemin[] à trouver.
+	                int* longueur_chemin	--> Longueur de la pile chemin[].
+	                int nb_lignes_grille	--> Limite en i du labyrinthe.
+	                int nb_colonnes_grille	--> limite en j du labyrithe.
 	                
 	Return : 	Void.
 */
 /************************************************************************************************/
 static int obtenir_prochaine_position(int chemin[],int longueur_chemin,int nb_lignes_grille,int nb_colonnes_grille);
-#endif
+/*
+CHEMIN_ALEATOIRE_AJOUTER_UN_PAS
+        Cette fonction retourne la prochaine position à visiter à partir de la dernière position du chemin courant. 
+        La position est choisie au hasard et doit être valide. La nouvelle position ne doit donc pas sortir du tableau. 
+        Par exemple, pour le chemin présenté plus haut, la prochaine position est 16, 22 ou 20.
+
+	Parametre : 	int* chemin[]		--> Pile contenant le chemin[] à trouver.
+	                int* longueur_chemin	--> Longueur de la pile chemin[].
+	                int nb_lignes_grille	--> Limite en i du labyrinthe.
+	                int nb_colonnes_grille	--> limite en j du labyrithe.
+	                
+	Return : 	int Prochaine position valide.
+*/
+/************************************************************************************************/
+
+        #endif
